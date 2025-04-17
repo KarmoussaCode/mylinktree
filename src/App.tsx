@@ -14,7 +14,7 @@ function App() {
           />
           <h1 className="text-xl font-bold text-[#4A9D6B] mb-2">@karmoussa_code</h1>
           <p className="text-gray-600 mb-6" dir="rtl">
-            ستجدون هنا كل المواقع  اللتي اشاركها في فيديوهاتي
+            .ستجدون هنا كل المواقع اللتي اشاركها في فيديوهاتي
           </p>
           
           {/* Social Media Icons */}
