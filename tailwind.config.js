@@ -6,6 +6,9 @@ export default {
       boxShadow: {
         'custom': '0 4px 14px -7px rgba(0, 0, 0, 0.3)',
       },
+      fontFamily: {
+        cairo: ['Cairo', 'sans-serif'],
+      },
     },
   },
   plugins: [],
