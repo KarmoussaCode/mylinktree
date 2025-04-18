@@ -13,15 +13,6 @@
     }
   }
   
-  /* .sparkle {
-    position: absolute;
-    width: 8px;
-    height: 8px;
-    background: rgb(255, 255, 255);
-    border-radius: 50%;
-    animation: sparkle 1.5s infinite ease-in-out;
-    box-shadow: 0 0 6px rgb(253, 253, 253);
-  } */
   .sparkle {
     position: absolute;
     width: 8px;
