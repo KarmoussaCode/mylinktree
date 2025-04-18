@@ -18,4 +18,3 @@ export default defineConfig({
   base: '/mylinktree/', // Set this to your repository name
   plugins: [react()],
 });
-
