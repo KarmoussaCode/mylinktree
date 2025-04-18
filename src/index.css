@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 @keyframes sparkle {
     0%, 100% {
       opacity: 0;
@@ -12,7 +13,7 @@
     }
   }
   
-  .sparkle {
+  /* .sparkle {
     position: absolute;
     width: 8px;
     height: 8px;
@@ -20,4 +21,19 @@
     border-radius: 50%;
     animation: sparkle 1.5s infinite ease-in-out;
     box-shadow: 0 0 6px rgb(253, 253, 253);
+  } */
+  .sparkle {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background-color: white;
+    border-radius: 50%;
+    /* opacity: 0; */
+    box-shadow: 0 0 6px rgb(253, 253, 253);
+    animation: sparkle-fade var(--duration, 2s) infinite;
+    animation-delay: var(--delay, 0s);
+  }
+  @keyframes sparkle-fade {
+    0%, 100% { opacity: 0; }
+    50% { opacity: 1; }
   }

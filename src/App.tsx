@@ -1,8 +1,47 @@
 import {  Send, Coffee } from 'lucide-react';
 import { FaInstagram } from 'react-icons/fa';
+const Sparkles = () => {
+  const count = 30;
+  const sparkles = Array.from({ length: count }).map((_, i) => {
+    const delay = (Math.random() * 2).toFixed(2);
+    const left = `${Math.random() * 100}%`;
+    const top = `${Math.random() * 100}%`;
+
+    return (
+      <div
+        key={i}
+        className="sparkle"
+        style={{
+          left,
+          top,
+          '--delay': `${delay}s`
+        } as React.CSSProperties}
+      />
+    );
+  });
+
+  return <>{sparkles}</>;
+};
+
 function App() {
   return (
     <div className="min-h-screen bg-gradient-to-b  from-[#fce7c8] to-[#639056] px-4 py-12">
+      {/* Sparkles */}
+      <div className="sparkle" style={{ top: '15%', left: '80%', '--delay': '0.2s', '--duration': '2s' } as React.CSSProperties}></div>
+<div className="sparkle" style={{ top: '50%', left: '90%', '--delay': '1s', '--duration': '1.5s' } as React.CSSProperties}></div>
+<div className="sparkle" style={{ bottom: '0px', left: '30%', '--delay': '0.5s', '--duration': '2.2s' } as React.CSSProperties}></div>
+<div className="sparkle" style={{ bottom: '20%', left: '87%', '--delay': '1.2s', '--duration': '1.8s' } as React.CSSProperties}></div>
+<div className="sparkle" style={{ top: '20%', left: '10%', '--delay': '0.7s', '--duration': '2s' } as React.CSSProperties}></div>
+<div className="sparkle" style={{ top: '80%', left: '40%', '--delay': '2s', '--duration': '2.5s' } as React.CSSProperties}></div>
+<div className="sparkle" style={{ bottom: '1%', left: '93%', '--delay': '0.3s', '--duration': '1.7s' } as React.CSSProperties}></div>
+<div className="sparkle" style={{ bottom: '30%', left: '85%', '--delay': '1.5s', '--duration': '2s' } as React.CSSProperties}></div>
+<div className="sparkle" style={{ top: '40%', left: '20%', '--delay': '0.1s', '--duration': '1.9s' } as React.CSSProperties}></div>
+<div className="sparkle" style={{ top: '60%', left: '5%', '--delay': '2.2s', '--duration': '1.5s' } as React.CSSProperties}></div>
+<div className="sparkle" style={{ bottom: '20%', left: '10%', '--delay': '0.4s', '--duration': '2.1s' } as React.CSSProperties}></div>
+<div className="sparkle" style={{ bottom: '43%', left: '50%', '--delay': '1.8s', '--duration': '1.6s' } as React.CSSProperties}></div>
+<div className="sparkle" style={{ top: '10%', left: '30%', '--delay': '0.9s', '--duration': '1.8s' } as React.CSSProperties}></div>
+<div className="sparkle" style={{ top: '98%', left: '6%', '--delay': '0.6s', '--duration': '2.3s' } as React.CSSProperties}></div>
+
       <div className="max-w-lg mx-auto">
         {/* Profile Section */}
         <div className="text-center mb-8">
@@ -109,26 +148,7 @@ function App() {
   <Coffee className="w-5 h-5 text-[#FF9B50] group-hover:text-[#E88B45]" />
   <span className="text-gray-700 font-medium group-hover:text-gray-900 transition-colors">Buy Me Kas Jus</span>
 </a>
-{/* Sparkles */}
-  <div className="sparkle" style={{ top: '15%', left: '80%' }}></div>
-  <div className="sparkle" style={{ top: '50%', left: '90%' }}></div>
-  <div className="sparkle" style={{ bottom: '0px', left: '30%' }}></div>
-  <div className="sparkle" style={{ bottom: '20%', left: '87%' }}></div>
-  <div className="sparkle" style={{ top: '20%', left: '10%' }}></div>
-  <div className="sparkle" style={{ top: '80%', left: '40%' }}></div>
-  <div className="sparkle" style={{ bottom: '1%', left: '93%' }}></div>
-  <div className="sparkle" style={{ bottom: '30%', left: '85%' }}></div>
-  <div className="sparkle" style={{ top: '40%', left: '20%' }}></div>
-  <div className="sparkle" style={{ top: '60%', left: '5%' }}></div>
-  <div className="sparkle" style={{ bottom: '20%', left: '10%' }}></div>
-  <div className="sparkle" style={{ bottom: '43%', left: '50%' }}></div>
-  <div className="sparkle" style={{ top: '10%', left: '30%' }}></div>
-  <div className="sparkle" style={{ top: '98%', left: '6%' }}></div>
 </div>
-
-
-
-
         {/* Footer */}
         <footer className="mt-12 text-center text-sm text-[#fce7c8]">
           Made with ❤️ by Karmoussa Code
