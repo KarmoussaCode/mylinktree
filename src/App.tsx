@@ -1,4 +1,3 @@
-import React from 'react';
 import {  Send, Coffee } from 'lucide-react';
 import { FaInstagram } from 'react-icons/fa';
 function App() {
@@ -13,8 +12,8 @@ function App() {
             className="w-24 h-24 rounded-full mx-auto mb-4 border-4 border-white shadow-lg"
           />
           <h1 className="text-xl font-bold text-[#4A9D6B] mb-2">@karmoussa_code</h1>
-          <p className="text-gray-600 mb-6 font-cairo" dir="rtl">
-            .ستجدون هنا كل المواقع اللتي اشاركها في فيديوهاتي
+          <p className="text-gray-600 mb-6 font-cairo font-bold " dir="rtl">
+          ❤️ ستجدون هنا كل المواقع اللتي اشاركها في فيديوهاتي
           </p>
           
           {/* Social Media Icons */}
@@ -62,7 +61,7 @@ function App() {
 
 {/* Bolt.new Link */}
 <div className="text-center">
-  <p className="text-gray-700 mb-2">📌 هذا الموقع يساعدك في خلق تطبيقات و مواقع حسب رغبتك في دقائق</p>
+  <p className="text-gray-700 mb-2 font-cairo font-bold">📌 هذا الموقع يساعدك في خلق تطبيقات و مواقع حسب رغبتك في دقائق</p>
   <a
     href="https://bolt.new/?rid=pqwxgb" 
     target="_blank"
