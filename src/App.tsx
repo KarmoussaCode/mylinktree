@@ -1,4 +1,3 @@
-import React from 'react';
 import {  Send, Coffee } from 'lucide-react';
 import { FaInstagram } from 'react-icons/fa';
 function App() {
