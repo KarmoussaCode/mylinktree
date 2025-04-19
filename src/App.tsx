@@ -46,7 +46,7 @@ function App() {
         {/* Profile Section */}
         <div className="text-center mb-8">
           <img
-            src="img/K.png"
+            src="/mylinktree/img/K.png"
             alt="Profile"
             className="w-24 h-24 rounded-full mx-auto mb-4 border-4 border-white shadow-lg"
           />
@@ -107,7 +107,7 @@ function App() {
     rel="noopener noreferrer"
     className="flex items-center justify-center gap-3 px-6 py-3 bg-white rounded-full shadow border border-gray-100 hover:-translate-y-1 transition-all group "
   >
-    <img src="img/bolt.png" alt="Bolt Logo" className="w-5 h-5" />
+    <img src="/mylinktree/img/bolt.png" alt="Bolt Logo" className="w-5 h-5" />
     <span className="text-gray-700 font-medium group-hover:text-gray-900 transition-colors">Bolt.new</span>
   </a>
 </div>
@@ -115,12 +115,12 @@ function App() {
 {/* Telegram Roadmap */}
 <div className="text-center">
   <a
-    href="https://t.me/karmoussacode/20" // <-- Replace with your real Telegram post link
+    href="https://t.me/karmoussacode/20"
     target="_blank"
     rel="noopener noreferrer"
     className="flex items-center justify-center gap-3 px-6 py-3 bg-white rounded-full shadow border border-gray-100 hover:-translate-y-1 transition-all group"
   >
-    <img src="img/telegram.png" alt="Roadmap" className="w-8 h-8 rounded-full" />
+    <img src="/mylinktree/img/telegram.png" alt="Roadmap" className="w-8 h-8 rounded-full" />
     <span className="text-gray-700 font-medium group-hover:text-gray-900 transition-colors"> خارطة الطريق لمبرمج مواقع ويب</span>
   </a>
 </div>
@@ -140,7 +140,7 @@ function App() {
 
 {/* Buy Me a Coffee */}
 <a
-  href="donate.html" // <-- Replace if needed
+  href="/mylinktree/donate.html"
   target="_blank"
   rel="noopener noreferrer"
   className="flex items-center justify-center gap-3 px-6 py-3 bg-white rounded-full shadow border border-gray-100 hover:-translate-y-1 transition-all group"
