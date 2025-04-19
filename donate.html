@@ -6,12 +6,6 @@
   <title>Buy Me Kas Jus</title>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <style>
-    :root {
-      --beige: #f5f0e6;
-      --green: #4f7c52;
-      --orange: #f4a259;
-    }
-
     body {
       margin: 0;
       padding: 0;
@@ -22,68 +16,6 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      position: relative;
-      overflow: hidden;
-    }
-
-    header {
-      background: linear-gradient(90deg, var(--green), var(--orange));
-      color: white;
-      text-align: center;
-      padding: 2rem;
-      font-family: 'Orbitron', sans-serif;
-      letter-spacing: 2px;
-      font-size: 1.5rem;
-    }
-
-    .donate-box {
-      background: white;
-      border-radius: 1.5rem;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-      padding: 2rem;
-      max-width: 400px;
-      margin: 2rem;
-      transition: transform 0.4s ease;
-    }
-
-    .donate-box:hover {
-      transform: translateY(-10px);
-    }
-
-    .donate-box h2 {
-      color: var(--green);
-      font-size: 1.5rem;
-      margin-bottom: 1rem;
-    }
-
-    .donate-box p {
-      font-size: 1rem;
-      margin-bottom: 1.5rem;
-    }
-
-    .btn {
-      display: inline-block;
-      padding: 0.8rem 1.5rem;
-      font-weight: bold;
-      text-decoration: none;
-      border-radius: 50px;
-      background: var(--orange);
-      color: white;
-      transition: background 0.3s ease;
-    }
-
-    .btn:hover {
-      background: var(--green);
-    }
-
-    .ccp-code {
-      background: var(--beige);
-      padding: 1rem;
-      border-radius: 10px;
-      font-weight: bold;
-      color: var(--green);
-      font-family: monospace;
-      user-select: all;
     }
 
     .container {
@@ -94,8 +26,6 @@
       text-align: center;
       max-width: 500px;
       width: 90%;
-      position: relative;
-      z-index: 1;
     }
 
     h1 {
@@ -128,86 +58,9 @@
     .copy-button:hover {
       background: #3d8a5a;
     }
-
-    .visuals {
-      display: flex;
-      justify-content: center;
-      gap: 2rem;
-      margin-top: 2rem;
-      flex-wrap: wrap;
-    }
-
-    .visuals img {
-      width: 80px;
-      height: 80px;
-      object-fit: contain;
-      transition: transform 0.3s ease;
-    }
-
-    .visuals img:hover {
-      transform: scale(1.1);
-    }
-    
-    .floating-icons {
-      position: relative;
-      width: 100%;
-      height: 400px;
-      overflow: hidden;
-      margin-top: 4rem;
-    }
-
-    .floating-icons img {
-      position: absolute;
-      animation: float 6s ease-in-out infinite;
-      opacity: 0.85;
-    }
-
-    @keyframes float {
-      0%   { transform: translateY(0px) rotate(0deg); }
-      50%  { transform: translateY(-20px) rotate(5deg); }
-      100% { transform: translateY(0px) rotate(0deg); }
-    }
-
-    .floating-icons img:nth-child(odd) {
-      animation: float 7s ease-in-out infinite alternate;
-    }
-
-    .floating-icons img:nth-child(even) {
-      animation: float 5s ease-in-out infinite;
-    }
-
-    .sparkle {
-      position: absolute;
-      width: 4px;
-      height: 4px;
-      background: white;
-      border-radius: 50%;
-      opacity: 0;
-      animation: sparkle var(--duration, 2s) infinite;
-      animation-delay: var(--delay, 0s);
-    }
-
-    @keyframes sparkle {
-      0% {
-        opacity: 0;
-        transform: scale(0);
-      }
-      50% {
-        opacity: 1;
-        transform: scale(1);
-      }
-      100% {
-        opacity: 0;
-        transform: scale(0);
-      }
-    }
   </style>
 </head>
 <body>
-  <header>
-    🌵 Support My Creative Work ☕
-  </header>
-
   <div class="container">
     <h1>Buy Me Kas Jus</h1>
     <p>If you enjoy my content and would like to support me, you can buy me a Kas Jus!</p>
@@ -224,36 +77,6 @@
 
     <p>Thank you for your support! ❤️</p>
   </div>
-
-  <div class="floating-icons">
-    <img src="img/struggle.png" alt="progress" style="top: 5%; left: 20%; width: 70px;" />
-    <img src="img/cofee.png" alt="cofee" style="top: 40%; left: 10%; width: 90px;" />
-    <img src="img/cactus.png" alt="Cactus" style="top: 30%; left: 70%; width: 60px;" />
-    <img src="img/binary.png" alt="binary" style="top: 7%; left: 40%; width: 80px;" />
-    <img src="img/3D_logo.png" alt="3D Logo" style="top: 20%; left: 80%; width: 120px;" />
-  </div>
-
-  <!-- Sparkles with different timings -->
-  <div class="sparkle" style="top: 15%; left: 80%; --delay: 0.2s; --duration: 2s;"></div>
-  <div class="sparkle" style="top: 50%; left: 90%; --delay: 1s; --duration: 1.5s;"></div>
-  <div class="sparkle" style="bottom: 0; left: 30%; --delay: 0.5s; --duration: 2.2s;"></div>
-  <div class="sparkle" style="bottom: 20%; left: 87%; --delay: 1.2s; --duration: 1.8s;"></div>
-  <div class="sparkle" style="top: 20%; left: 10%; --delay: 0.7s; --duration: 2s;"></div>
-  <div class="sparkle" style="top: 80%; left: 40%; --delay: 2s; --duration: 2.5s;"></div>
-  <div class="sparkle" style="bottom: 1%; left: 93%; --delay: 0.3s; --duration: 1.7s;"></div>
-  <div class="sparkle" style="bottom: 30%; left: 85%; --delay: 1.5s; --duration: 2s;"></div>
-  <div class="sparkle" style="top: 40%; left: 20%; --delay: 0.1s; --duration: 1.9s;"></div>
-  <div class="sparkle" style="top: 60%; left: 5%; --delay: 2.2s; --duration: 1.5s;"></div>
-  <div class="sparkle" style="bottom: 20%; left: 10%; --delay: 0.4s; --duration: 2.1s;"></div>
-  <div class="sparkle" style="bottom: 43%; left: 50%; --delay: 1.8s; --duration: 1.6s;"></div>
-  <div class="sparkle" style="top: 10%; left: 30%; --delay: 0.9s; --duration: 1.8s;"></div>
-  <div class="sparkle" style="top: 98%; left: 6%; --delay: 0.6s; --duration: 2.3s;"></div>
-  <div class="sparkle" style="top: 25%; left: 45%; --delay: 1.1s; --duration: 2.4s;"></div>
-  <div class="sparkle" style="top: 75%; left: 65%; --delay: 0.8s; --duration: 1.4s;"></div>
-  <div class="sparkle" style="bottom: 15%; left: 25%; --delay: 1.3s; --duration: 2.6s;"></div>
-  <div class="sparkle" style="top: 35%; left: 75%; --delay: 1.7s; --duration: 1.3s;"></div>
-  <div class="sparkle" style="bottom: 35%; left: 15%; --delay: 0.2s; --duration: 2.7s;"></div>
-  <div class="sparkle" style="top: 85%; left: 55%; --delay: 1.4s; --duration: 1.9s;"></div>
 
   <script>
     function copyPhoneNumber() {
