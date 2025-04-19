@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Support My Work</title>
+  <title>Buy Me Kas Jus</title>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <style>
     :root {
@@ -13,15 +13,18 @@
     }
 
     body {
-  margin: 0;
-  font-family: 'Roboto', sans-serif;
-  background: radial-gradient(circle at center, #f5f0e6 0%, #f4a259 100%);
-  background-attachment: fixed;
-  color: #333;
-  overflow-x: hidden;
-  position: relative;
-  }
-
+      margin: 0;
+      padding: 0;
+      font-family: 'Cairo', sans-serif;
+      background: linear-gradient(to bottom, #fce7c8, #639056);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
+    }
 
     header {
       background: linear-gradient(90deg, var(--green), var(--orange));
@@ -32,8 +35,6 @@
       letter-spacing: 2px;
       font-size: 1.5rem;
     }
-
-
 
     .donate-box {
       background: white;
@@ -84,13 +85,48 @@
       font-family: monospace;
       user-select: all;
     }
+
     .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 3rem 1rem;
-    min-height: 100vh;
+      background: white;
+      padding: 2rem;
+      border-radius: 1rem;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      max-width: 500px;
+      width: 90%;
+      position: relative;
+      z-index: 1;
+    }
+
+    h1 {
+      color: #4A9D6B;
+      margin-bottom: 1.5rem;
+    }
+
+    .qr-code {
+      max-width: 200px;
+      margin: 1rem auto;
+    }
+
+    .payment-info {
+      margin: 1rem 0;
+      padding: 1rem;
+      background: #f8f9fa;
+      border-radius: 0.5rem;
+    }
+
+    .copy-button {
+      background: #4A9D6B;
+      color: white;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 0.25rem;
+      cursor: pointer;
+      margin-top: 0.5rem;
+    }
+
+    .copy-button:hover {
+      background: #3d8a5a;
     }
 
     .visuals {
@@ -113,84 +149,97 @@
     }
     
     .floating-icons {
-    position: relative;
-    width: 100%;
-    height: 400px;
-    overflow: hidden;
-    margin-top: 4rem;
+      position: relative;
+      width: 100%;
+      height: 400px;
+      overflow: hidden;
+      margin-top: 4rem;
     }
 
     .floating-icons img {
-    position: absolute;
-    animation: float 6s ease-in-out infinite;
-    opacity: 0.85;
+      position: absolute;
+      animation: float 6s ease-in-out infinite;
+      opacity: 0.85;
     }
 
-    /* Keyframe animation for floating */
     @keyframes float {
-    0%   { transform: translateY(0px) rotate(0deg); }
-    50%  { transform: translateY(-20px) rotate(5deg); }
-    100% { transform: translateY(0px) rotate(0deg); }
+      0%   { transform: translateY(0px) rotate(0deg); }
+      50%  { transform: translateY(-20px) rotate(5deg); }
+      100% { transform: translateY(0px) rotate(0deg); }
     }
 
-    /* Different animation durations for variety */
     .floating-icons img:nth-child(odd) {
-    animation: float 7s ease-in-out infinite alternate;
+      animation: float 7s ease-in-out infinite alternate;
     }
 
     .floating-icons img:nth-child(even) {
-    animation: float 5s ease-in-out infinite;
+      animation: float 5s ease-in-out infinite;
     }
+
     .sparkle {
-  position: absolute;
-  width: 6px;
-  height: 6px;
-  background: white;
-  border-radius: 50%;
-  opacity: 0.6;
-  animation: twinkle 3s infinite ease-in-out;
-  box-shadow: 0 0 6px white;
-}
+      position: absolute;
+      width: 4px;
+      height: 4px;
+      background: white;
+      border-radius: 50%;
+      opacity: 0;
+      animation: sparkle var(--duration, 2s) infinite;
+      animation-delay: var(--delay, 0s);
+    }
 
-@keyframes twinkle {
-  0%, 100% { opacity: 0.6; transform: scale(1); }
-  50%      { opacity: 1; transform: scale(1.5); }
-}
-
+    @keyframes sparkle {
+      0% {
+        opacity: 0;
+        transform: scale(0);
+      }
+      50% {
+        opacity: 1;
+        transform: scale(1);
+      }
+      100% {
+        opacity: 0;
+        transform: scale(0);
+      }
+    }
   </style>
 </head>
-<div class="sparkle" style="top: 50px; left: 20%;"></div>
-<div class="sparkle" style="top: 120px; left: 70%;"></div>
-<div class="sparkle" style="top: 300px; left: 40%;"></div>
-<div class="sparkle" style="top: 200px; left: 80%;"></div>
-<div class="sparkle" style="top: 100px; left: 10%;"></div>
-<div class="sparkle" style="top: 350px; left: 60%;"></div>
-<div class="sparkle" style="top: 250px; left: 30%;"></div>
 <body>
   <header>
     🌵 Support My Creative Work ☕
   </header>
 
-  <!-- <div class="container">
-    <div class="donate-box">
-      <h2>Donate via PayPal</h2>
-      <p>Your support keeps the cactus blooming and the coffee flowing!</p>
-      <a href="https://www.paypal.com/donate" class="btn" target="_blank">Donate with PayPal</a>
-    </div> -->
-
-    <div class="donate-box">
-      <h2>Buy me Kas jus with BaridiMob </h2>
-      <p>Copy my CCP number and send your support 💌</p>
-      <div class="ccp-code">0025798569 - Clé 23</div>
+  <div class="container">
+    <h1>Buy Me Kas Jus</h1>
+    <p>If you enjoy my content and would like to support me, you can buy me a Kas Jus!</p>
+    
+    <div class="payment-info">
+      <h3>Payment Information</h3>
+      <p>Phone Number: <span id="phone">+212 6XX-XXXXXX</span></p>
+      <button class="copy-button" onclick="copyPhoneNumber()">Copy Phone Number</button>
     </div>
 
-    <div class="floating-icons">
-        <img src="img/struggle.png" alt="progress" style="top: 5%; left: 20%; width: 70px;" />
-        <img src="img/cofee.png" alt="cofee" style="top: 40%; left: 10%; width: 90px;" />
-        <img src="img/cactus.png" alt="Cactus" style="top: 30%; left: 70%; width: 60px;" />
-        <img src="img/binary.png" alt="binary" style="top: 7%; left: 40%; width: 80px;" />
-        <img src="img/3D_logo.png" alt="3D Logo" style="top: 20%; left: 80%; width: 120px;" />
-      </div>
+    <div class="qr-code">
+      <img src="/mylinktree/img/qr-code.png" alt="QR Code" style="width: 100%;">
+    </div>
+
+    <p>Thank you for your support! ❤️</p>
   </div>
+
+  <div class="floating-icons">
+    <img src="img/struggle.png" alt="progress" style="top: 5%; left: 20%; width: 70px;" />
+    <img src="img/cofee.png" alt="cofee" style="top: 40%; left: 10%; width: 90px;" />
+    <img src="img/cactus.png" alt="Cactus" style="top: 30%; left: 70%; width: 60px;" />
+    <img src="img/binary.png" alt="binary" style="top: 7%; left: 40%; width: 80px;" />
+    <img src="img/3D_logo.png" alt="3D Logo" style="top: 20%; left: 80%; width: 120px;" />
+  </div>
+
+  <script>
+    function copyPhoneNumber() {
+      const phoneNumber = document.getElementById('phone').textContent;
+      navigator.clipboard.writeText(phoneNumber).then(() => {
+        alert('Phone number copied to clipboard!');
+      });
+    }
+  </script>
 </body>
 </html>
