@@ -1,9 +1,11 @@
 import {  Send, Coffee } from 'lucide-react';
 import { FaInstagram } from 'react-icons/fa';
+
 const Sparkles = () => {
   const count = 30;
   const sparkles = Array.from({ length: count }).map((_, i) => {
     const delay = (Math.random() * 2).toFixed(2);
+    const duration = (1 + Math.random() * 2).toFixed(2);
     const left = `${Math.random() * 100}%`;
     const top = `${Math.random() * 100}%`;
 
@@ -14,7 +16,8 @@ const Sparkles = () => {
         style={{
           left,
           top,
-          '--delay': `${delay}s`
+          '--delay': `${delay}s`,
+          '--duration': `${duration}s`
         } as React.CSSProperties}
       />
     );
@@ -28,19 +31,19 @@ function App() {
     <div className="min-h-screen bg-gradient-to-b  from-[#fce7c8] to-[#639056] px-4 py-12">
       {/* Sparkles */}
       <div className="sparkle" style={{ top: '15%', left: '80%', '--delay': '0.2s', '--duration': '2s' } as React.CSSProperties}></div>
-<div className="sparkle" style={{ top: '50%', left: '90%', '--delay': '1s', '--duration': '1.5s' } as React.CSSProperties}></div>
-<div className="sparkle" style={{ bottom: '0px', left: '30%', '--delay': '0.5s', '--duration': '2.2s' } as React.CSSProperties}></div>
-<div className="sparkle" style={{ bottom: '20%', left: '87%', '--delay': '1.2s', '--duration': '1.8s' } as React.CSSProperties}></div>
-<div className="sparkle" style={{ top: '20%', left: '10%', '--delay': '0.7s', '--duration': '2s' } as React.CSSProperties}></div>
-<div className="sparkle" style={{ top: '80%', left: '40%', '--delay': '2s', '--duration': '2.5s' } as React.CSSProperties}></div>
-<div className="sparkle" style={{ bottom: '1%', left: '93%', '--delay': '0.3s', '--duration': '1.7s' } as React.CSSProperties}></div>
-<div className="sparkle" style={{ bottom: '30%', left: '85%', '--delay': '1.5s', '--duration': '2s' } as React.CSSProperties}></div>
-<div className="sparkle" style={{ top: '40%', left: '20%', '--delay': '0.1s', '--duration': '1.9s' } as React.CSSProperties}></div>
-<div className="sparkle" style={{ top: '60%', left: '5%', '--delay': '2.2s', '--duration': '1.5s' } as React.CSSProperties}></div>
-<div className="sparkle" style={{ bottom: '20%', left: '10%', '--delay': '0.4s', '--duration': '2.1s' } as React.CSSProperties}></div>
-<div className="sparkle" style={{ bottom: '43%', left: '50%', '--delay': '1.8s', '--duration': '1.6s' } as React.CSSProperties}></div>
-<div className="sparkle" style={{ top: '10%', left: '30%', '--delay': '0.9s', '--duration': '1.8s' } as React.CSSProperties}></div>
-<div className="sparkle" style={{ top: '98%', left: '6%', '--delay': '0.6s', '--duration': '2.3s' } as React.CSSProperties}></div>
+      <div className="sparkle" style={{ top: '50%', left: '90%', '--delay': '1s', '--duration': '1.5s' } as React.CSSProperties}></div>
+      <div className="sparkle" style={{ bottom: '0px', left: '30%', '--delay': '0.5s', '--duration': '2.2s' } as React.CSSProperties}></div>
+      <div className="sparkle" style={{ bottom: '20%', left: '87%', '--delay': '1.2s', '--duration': '1.8s' } as React.CSSProperties}></div>
+      <div className="sparkle" style={{ top: '20%', left: '10%', '--delay': '0.7s', '--duration': '2s' } as React.CSSProperties}></div>
+      <div className="sparkle" style={{ top: '80%', left: '40%', '--delay': '2s', '--duration': '2.5s' } as React.CSSProperties}></div>
+      <div className="sparkle" style={{ bottom: '1%', left: '93%', '--delay': '0.3s', '--duration': '1.7s' } as React.CSSProperties}></div>
+      <div className="sparkle" style={{ bottom: '30%', left: '85%', '--delay': '1.5s', '--duration': '2s' } as React.CSSProperties}></div>
+      <div className="sparkle" style={{ top: '40%', left: '20%', '--delay': '0.1s', '--duration': '1.9s' } as React.CSSProperties}></div>
+      <div className="sparkle" style={{ top: '60%', left: '5%', '--delay': '2.2s', '--duration': '1.5s' } as React.CSSProperties}></div>
+      <div className="sparkle" style={{ bottom: '20%', left: '10%', '--delay': '0.4s', '--duration': '2.1s' } as React.CSSProperties}></div>
+      <div className="sparkle" style={{ bottom: '43%', left: '50%', '--delay': '1.8s', '--duration': '1.6s' } as React.CSSProperties}></div>
+      <div className="sparkle" style={{ top: '10%', left: '30%', '--delay': '0.9s', '--duration': '1.8s' } as React.CSSProperties}></div>
+      <div className="sparkle" style={{ top: '98%', left: '6%', '--delay': '0.6s', '--duration': '2.3s' } as React.CSSProperties}></div>
 
       <div className="max-w-lg mx-auto">
         {/* Profile Section */}
@@ -96,59 +99,59 @@ function App() {
         </div>
 
         {/* Links Section */}
-<div className="space-y-6">
+        <div className="space-y-6">
 
-{/* Bolt.new Link */}
-<div className="text-center">
-  <p className="text-gray-700 mb-2 font-cairo font-bold">📌 هذا الموقع يساعدك في خلق تطبيقات و مواقع حسب رغبتك في دقائق</p>
-  <a
-    href="https://bolt.new/?rid=pqwxgb" 
-    target="_blank"
-    rel="noopener noreferrer"
-    className="flex items-center justify-center gap-3 px-6 py-3 bg-white rounded-full shadow border border-gray-100 hover:-translate-y-1 transition-all group "
-  >
-    <img src="/mylinktree/img/bolt.png" alt="Bolt Logo" className="w-5 h-5" />
-    <span className="text-gray-700 font-medium group-hover:text-gray-900 transition-colors">Bolt.new</span>
-  </a>
-</div>
+          {/* Bolt.new Link */}
+          <div className="text-center">
+            <p className="text-gray-700 mb-2 font-cairo font-bold">📌 هذا الموقع يساعدك في خلق تطبيقات و مواقع حسب رغبتك في دقائق</p>
+            <a
+              href="https://bolt.new/?rid=pqwxgb" 
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-center gap-3 px-6 py-3 bg-white rounded-full shadow border border-gray-100 hover:-translate-y-1 transition-all group "
+            >
+              <img src="/mylinktree/img/bolt.png" alt="Bolt Logo" className="w-5 h-5" />
+              <span className="text-gray-700 font-medium group-hover:text-gray-900 transition-colors">Bolt.new</span>
+            </a>
+          </div>
 
-{/* Telegram Roadmap */}
-<div className="text-center">
-  <a
-    href="https://t.me/karmoussacode/20"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="flex items-center justify-center gap-3 px-6 py-3 bg-white rounded-full shadow border border-gray-100 hover:-translate-y-1 transition-all group"
-  >
-    <img src="/mylinktree/img/telegram.png" alt="Roadmap" className="w-8 h-8 rounded-full" />
-    <span className="text-gray-700 font-medium group-hover:text-gray-900 transition-colors"> خارطة الطريق لمبرمج مواقع ويب</span>
-  </a>
-</div>
+          {/* Telegram Roadmap */}
+          <div className="text-center">
+            <a
+              href="https://t.me/karmoussacode/20"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-center gap-3 px-6 py-3 bg-white rounded-full shadow border border-gray-100 hover:-translate-y-1 transition-all group"
+            >
+              <img src="/mylinktree/img/telegram.png" alt="Roadmap" className="w-8 h-8 rounded-full" />
+              <span className="text-gray-700 font-medium group-hover:text-gray-900 transition-colors"> خارطة الطريق لمبرمج مواقع ويب</span>
+            </a>
+          </div>
 
-{/* GitHub Link */}
-<a
-  href="https://github.com/KarmoussaCode" 
-   target="_blank" // <-- to open in a new tab
-  rel="noopener noreferrer"
-  className="flex items-center justify-center gap-3 px-6 py-3 bg-white rounded-full shadow border border-gray-100 hover:-translate-y-1 transition-all group"
->
-  <svg className="w-5 h-5 fill-current text-gray-600 group-hover:text-gray-800" viewBox="0 0 24 24">
-    <path d="M12 0C5.37 0 0 5.4 0 12.07c0 5.34 3.44 9.86 8.21 11.46.6.11.82-.26.82-.58 0-.29-.01-1.06-.02-2.07-3.34.74-4.04-1.63-4.04-1.63-.54-1.39-1.32-1.76-1.32-1.76-1.08-.74.08-.73.08-.73 1.2.09 1.83 1.26 1.83 1.26 1.06 1.84 2.78 1.31 3.46 1 .11-.78.42-1.31.76-1.61-2.67-.31-5.47-1.34-5.47-5.95 0-1.31.46-2.38 1.22-3.22-.12-.31-.53-1.56.12-3.25 0 0 1.01-.33 3.3 1.23a11.4 11.4 0 0 1 3-.41c1.02 0 2.05.14 3 .41 2.29-1.56 3.3-1.23 3.3-1.23.65 1.69.24 2.94.12 3.25.76.84 1.22 1.91 1.22 3.22 0 4.62-2.81 5.63-5.49 5.94.43.37.81 1.1.81 2.22 0 1.6-.02 2.89-.02 3.29 0 .32.21.7.83.58A12.01 12.01 0 0 0 24 12.07C24 5.4 18.63 0 12 0z"/>
-  </svg>
-  <span className="text-gray-700 font-medium group-hover:text-gray-900 transition-colors">GitHub</span>
-</a>
+          {/* GitHub Link */}
+          <a
+            href="https://github.com/KarmoussaCode" 
+             target="_blank" // <-- to open in a new tab
+            rel="noopener noreferrer"
+            className="flex items-center justify-center gap-3 px-6 py-3 bg-white rounded-full shadow border border-gray-100 hover:-translate-y-1 transition-all group"
+          >
+            <svg className="w-5 h-5 fill-current text-gray-600 group-hover:text-gray-800" viewBox="0 0 24 24">
+              <path d="M12 0C5.37 0 0 5.4 0 12.07c0 5.34 3.44 9.86 8.21 11.46.6.11.82-.26.82-.58 0-.29-.01-1.06-.02-2.07-3.34.74-4.04-1.63-4.04-1.63-.54-1.39-1.32-1.76-1.32-1.76-1.08-.74.08-.73.08-.73 1.2.09 1.83 1.26 1.83 1.26 1.06 1.84 2.78 1.31 3.46 1 .11-.78.42-1.31.76-1.61-2.67-.31-5.47-1.34-5.47-5.95 0-1.31.46-2.38 1.22-3.22-.12-.31-.53-1.56.12-3.25 0 0 1.01-.33 3.3 1.23a11.4 11.4 0 0 1 3-.41c1.02 0 2.05.14 3 .41 2.29-1.56 3.3-1.23 3.3-1.23.65 1.69.24 2.94.12 3.25.76.84 1.22 1.91 1.22 3.22 0 4.62-2.81 5.63-5.49 5.94.43.37.81 1.1.81 2.22 0 1.6-.02 2.89-.02 3.29 0 .32.21.7.83.58A12.01 12.01 0 0 0 24 12.07C24 5.4 18.63 0 12 0z"/>
+            </svg>
+            <span className="text-gray-700 font-medium group-hover:text-gray-900 transition-colors">GitHub</span>
+          </a>
 
-{/* Buy Me a Coffee */}
-<a
-  href="/mylinktree/donate.html"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="flex items-center justify-center gap-3 px-6 py-3 bg-white rounded-full shadow border border-gray-100 hover:-translate-y-1 transition-all group"
->
-  <Coffee className="w-5 h-5 text-[#FF9B50] group-hover:text-[#E88B45]" />
-  <span className="text-gray-700 font-medium group-hover:text-gray-900 transition-colors">Buy Me Kas Jus</span>
-</a>
-</div>
+          {/* Buy Me a Coffee */}
+          <a
+            href="/mylinktree/donate.html"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center justify-center gap-3 px-6 py-3 bg-white rounded-full shadow border border-gray-100 hover:-translate-y-1 transition-all group"
+          >
+            <Coffee className="w-5 h-5 text-[#FF9B50] group-hover:text-[#E88B45]" />
+            <span className="text-gray-700 font-medium group-hover:text-gray-900 transition-colors">Buy Me Kas Jus</span>
+          </a>
+        </div>
         {/* Footer */}
         <footer className="mt-12 text-center text-sm text-[#fce7c8]">
           Made with ❤️ by Karmoussa Code

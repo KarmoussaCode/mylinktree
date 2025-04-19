@@ -11,8 +11,10 @@ export default defineConfig({
       output: {
         manualChunks: undefined
       }
-    }
+    },
+    copyPublicDir: true
   },
+  publicDir: 'public',
   server: {
     headers: {
       'Content-Type': 'application/javascript'
